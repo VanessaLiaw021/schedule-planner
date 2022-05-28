@@ -49,7 +49,10 @@ $(document).ready(function() {
     determineHour();
 
     //Add a click event for the save button to save the user input
-    $(".saveBtn").on("click", function() {
+    $(".saveBtn").on("click", function(event) {
+
+        //Prevent the default action from happening
+        event.preventDefault();
 
         //Variable that get the parent id of button and split it
         var attribute = $(this).parent().attr("data-id");
