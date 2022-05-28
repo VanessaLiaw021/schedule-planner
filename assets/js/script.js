@@ -49,7 +49,15 @@ $(document).ready(function() {
     determineHour();
 
     //Add a click event for the save button to save the user input
-    $(".save-btn").on("click", function() {
+    $(".saveBtn").on("click", function() {
 
+        //Variable that get the parent id of button and split it
+        var attribute = $(this).parent().attr("data-id");
+
+        //Variable that get the user input value 
+        var textInput = $(this).siblings(".description").val();
+
+        //Set the key and text input
+        localStorage.setItem(attribute, textInput);
     });
 });
