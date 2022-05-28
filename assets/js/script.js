@@ -47,4 +47,9 @@ $(document).ready(function() {
 
     //Call the function deteremine hour
     determineHour();
+
+    //Add a click event for the save button to save the user input
+    $(".save-btn").on("click", function() {
+
+    });
 });
