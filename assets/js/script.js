@@ -54,7 +54,7 @@ $(document).ready(function() {
         //Prevent the default action from happening
         event.preventDefault();
 
-        //Variable that get the parent id of button and split it
+        //Variable that get the parent dataset of save button 
         var attribute = $(this).parent().attr("data-id");
 
         //Variable that get the user input value 
@@ -64,5 +64,21 @@ $(document).ready(function() {
         localStorage.setItem(attribute, textInput);
     });
 
-    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    //Function that get the the item from local storage and display it 
+    function displayLocalStorage() {
+
+        //Get each of the timeblock id and get the item from local storage and display it 
+        $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+        $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+        $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+        $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+        $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+        $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+        $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+        $("#hour-16 .description").val(localStorage.getItem("hour-16"));
+        $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+   }
+
+    //Call the function display local storage to html 
+    displayLocalStorage();
 });
