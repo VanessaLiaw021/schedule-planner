@@ -63,4 +63,6 @@ $(document).ready(function() {
         //Set the key and text input
         localStorage.setItem(attribute, textInput);
     });
+
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
 });
