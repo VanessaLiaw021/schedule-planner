@@ -14,6 +14,8 @@ This is a work schedule planner that will let the user save their to do on that 
 
 When the user save their input, it is save to their computer using local storage and whenever the user reload the page, it will alway be there, until the user updates the text that was saved.
 
+Each of the timeblock will be color coded. If the time has pass, it will turn gray. If it is at the current hour, the color will turn red. If the time has not been met, the color will turn green. 
+
 ## Usage 
 
 How would a user used this schedule planner 
@@ -23,6 +25,10 @@ How would a user used this schedule planner
 - Step 2: Once the user type out next to the timeblock they need to save to planner, the user then clicks save and it will save the user input next to timeblock that was inputted.
 
 ## Visuals 
+
+This is what the page should look like when it loads 
+
+![Schedule Planner](./assets/images/Work-Day-Scheduler.png)
 
 ## Resources 
 
