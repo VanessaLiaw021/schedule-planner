@@ -14,7 +14,7 @@ This is a work schedule planner that will let the user save their to do on that 
 
 When the user save their input, it is save to their computer using local storage and whenever the user reload the page, it will alway be there, until the user updates the text that was saved.
 
-Each of the timeblock will be color coded. If the time has pass, it will turn gray. If it is at the current hour, the color will turn red. If the time has not been met, the color will turn green. 
+Each of the timeblock will be color coded. If the time has pass, it will turn gray. If it is at the current hour, the color will turn red. If the time has not been met yet, the color will turn green. 
 
 ## Usage 
 
